@@ -13,13 +13,13 @@ const Login = () => {
       JSON.stringify([{ username: userName, password: password }])
     );
     navigate("/home");
-    // setUserName("");
-    // setPassword("");
+    setUserName("");
+    setPassword("");
   };
 
   return (
     <div>
-      <form onSubmit={() => handleSubmit()}>
+      <form onSubmit={(e) => handleSubmit(e)}>
         <div className="mb-3">
           <label htmlFor="username" className="form-label">
             <h4>Username</h4>

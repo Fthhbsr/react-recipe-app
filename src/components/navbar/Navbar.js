@@ -1,30 +1,26 @@
-import { NavLink } from "react-router-dom";
-//import logo from "../../assets/home.svg";
-//import "./Navbar.css";
-import { Container, Nav } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
-const Navbar = () => {
-  //   const navigate = useNavigate();
-
-  //   const handleClick = () => {
-  //     sessionStorage.clear();
-  //     navigate("/");
-  //   };
+const NavBar = () => {
+  const handleClick = () => {
+    sessionStorage.clear();
+  };
 
   return (
     <div>
       <Navbar bg="success" variant="dark">
-        <Container>
-          {/* <Navbar.Brand href="/home">Clarusway</Navbar.Brand> */}
-          <Nav className="me-auto">
-            <NavLink to="/home">Home</NavLink>
-            <NavLink to="/about">About</NavLink>
-            <NavLink
-              to="/"
-              // onClick={() => handleClick()}
-            >
-              Logout
-            </NavLink>
+        <Container className="row justify-content-between px-5">
+          <Navbar.Brand href="/home">RECIPE APP</Navbar.Brand>
+          <Nav className="me-auto ">
+            <Nav.Link className="me-4" href="/about">
+              ABOUT
+            </Nav.Link>
+            <Nav.Link href="https://github.com/Fthhbsr">GITHUB</Nav.Link>
+
+            <Nav.Link className="ms-4" href="/" onClick={handleClick}>
+              LOGOUT
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
@@ -32,4 +28,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
