@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import NavBar from "../../components/navbar/NavBar";
+import { Card } from "react-bootstrap";
 
 const CardDetail = () => {
   const location = useLocation();
@@ -8,7 +9,12 @@ const CardDetail = () => {
   return (
     <div>
       <NavBar />
-      CardDetail
+      <Card>
+        <Card.Body>
+          <Card.Text>{RecipeDetail.label}</Card.Text>
+        </Card.Body>
+        <Card.Img variant="top" src={RecipeDetail.image} />
+      </Card>
     </div>
   );
 };

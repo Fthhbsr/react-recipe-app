@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import chefshat from "../../assets/chefshat.svg";
 
 const NavBar = () => {
   const handleClick = () => {
@@ -9,10 +10,13 @@ const NavBar = () => {
 
   return (
     <div>
-      <Navbar bg="success" variant="dark">
+      <Navbar bg="warning">
         <Container className="row justify-content-between px-5">
-          <Navbar.Brand href="/home">RECIPE APP</Navbar.Brand>
-          <Nav className="me-auto ">
+          <Navbar.Brand href="/home">
+            <img style={{ width: "50px" }} src={chefshat} alt="logo" />
+            RECIPE APP
+          </Navbar.Brand>
+          <Nav className="me-auto text-white">
             <Nav.Link className="me-4" href="/about">
               ABOUT
             </Nav.Link>
