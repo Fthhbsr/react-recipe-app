@@ -22,6 +22,7 @@ const NavBar = () => {
             </Nav.Link>
             <Nav.Link
               className="border rounded"
+              target="_blank"
               href="https://github.com/Fthhbsr"
             >
               GITHUB
