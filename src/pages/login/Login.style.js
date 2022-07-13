@@ -15,8 +15,13 @@ export const StyledDiv = styled.div`
   width: 400px;
   height: 400px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  img {
+    width: 10rem;
+    padding-bottom: 1rem;
+  }
 `;
 
 export const StyledForm = styled.form`

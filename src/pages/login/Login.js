@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { StyledDiv, StyledForm, StyledBg } from "./Login.style";
+import meal from "../../assets/meal.svg";
 
 const Login = () => {
   const [userName, setUserName] = useState();
@@ -21,6 +22,7 @@ const Login = () => {
   return (
     <StyledBg>
       <StyledDiv>
+        <img src={meal} alt="meal.svg" />
         <StyledForm onSubmit={(e) => handleSubmit(e)}>
           <div className="mb-3">
             <label htmlFor="username" className="form-label">

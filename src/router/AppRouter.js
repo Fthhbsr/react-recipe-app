@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "../pages/about/About";
-import CardDetail from "../pages/home/CardDetail";
+import CardDetail from "../pages/details/CardDetail";
 import Home from "../pages/home/Home";
 import Login from "../pages/login/Login";
 import NotFound from "../pages/NotFound";
